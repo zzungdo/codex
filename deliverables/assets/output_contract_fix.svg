@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1260" viewBox="0 0 1440 1260" role="img" aria-labelledby="title desc">
+<title id="title">ONNX·SDK 출력 오류: 형태와 단위를 각각 수정</title>
+<desc id="desc">수정 전후의 채널·축 및 좌표 단위를 비교합니다. 실제 좌표나 모델 설정은 사용하지 않습니다. 원리 설명용 가상 예시 · 실제 데이터 및 성과 수치 아님</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#5A6872"/></marker><marker id="redarrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#AD3434"/></marker></defs>
+<rect width="1440" height="1260" fill="white"/>
+<text x="44" y="59" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="38" font-weight="700" text-anchor="start" fill="#172B3A">ONNX·SDK 출력 오류: 형태와 단위를 각각 수정</text>
+<text x="44" y="103" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#5A6872">원리 설명용 가상 예시 · 실제 데이터 및 성과 수치 아님</text>
+<rect x="44" y="145" width="650" height="790" rx="14" fill="white" stroke="#CBD3D9" stroke-width="3"/>
+<rect x="746" y="145" width="650" height="790" rx="14" fill="white" stroke="#CBD3D9" stroke-width="3"/>
+<text x="76" y="195" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="31" font-weight="700" text-anchor="start" fill="#AD3434">수정 전 · 규약 불일치</text>
+<text x="778" y="195" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="31" font-weight="700" text-anchor="start" fill="#17658A">수정 후 · SDK 규약에 맞춤</text>
+<text x="76" y="252" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="27" font-weight="700" text-anchor="start" fill="#172B3A">채널 구성·축 순서</text>
+<text x="778" y="252" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="27" font-weight="700" text-anchor="start" fill="#172B3A">채널 구성·축 순서</text>
+<rect x="82" y="280" width="258" height="110" rx="14" fill="white" stroke="#AD3434" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="211.0" y="325.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#AD3434">필요 채널 누락</text>
+<text x="211.0" y="361.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#AD3434">축 배치 불일치</text>
+<path d="M346,335 H390" fill="none" stroke="#AD3434" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#redarrow)"/>
+<rect x="406" y="280" width="250" height="110" rx="14" fill="white" stroke="#AD3434" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="531.0" y="325.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#AD3434">SDK 해석 실패</text>
+<text x="531.0" y="361.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#AD3434">컴파일 오류</text>
+<rect x="784" y="280" width="258" height="110" rx="14" fill="white" stroke="#17658A" stroke-width="3"/>
+<text x="913.0" y="325.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">필요 채널 반영</text>
+<text x="913.0" y="361.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">축 배치 수정</text>
+<path d="M1048,335 H1092" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1108" y="280" width="250" height="110" rx="14" fill="white" stroke="#17658A" stroke-width="3"/>
+<text x="1233.0" y="325.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">SDK 기대 형식</text>
+<text x="1233.0" y="361.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">컴파일 완료</text>
+<text x="76" y="455" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="27" font-weight="700" text-anchor="start" fill="#172B3A">좌표 단위</text>
+<text x="778" y="455" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="27" font-weight="700" text-anchor="start" fill="#172B3A">좌표 단위</text>
+<text x="76" y="500" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#AD3434">픽셀값을 상대값으로 잘못 해석</text>
+<text x="778" y="500" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#17658A">출력 단위를 후처리와 일치시킴</text>
+<text x="76" y="543" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#5A6872">크기 복원이 중복되어 화면 밖으로 이동</text>
+<text x="778" y="543" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#5A6872">단위를 맞춘 뒤 화면 크기로 복원</text>
+<rect x="90" y="622" width="330" height="190" rx="0" fill="#F3F7FA" stroke="#172B3A" stroke-width="3"/>
+<text x="90" y="602" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#5A6872">가상 화면</text>
+<circle cx="253" cy="680" r="14" fill="#172B3A"/>
+<path d="M253,700 V753 M225,731 L253,709 L281,731 M253,753 L230,793 M253,753 L276,793" fill="none" stroke="#172B3A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="492" y="590" width="146" height="165" rx="0" fill="none" stroke="#AD3434" stroke-width="3" stroke-dasharray="10 7"/>
+<path d="M305,698 L475,650" fill="none" stroke="#AD3434" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#redarrow)"/>
+<text x="476" y="806" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#AD3434">화면 밖 박스</text>
+<text x="90" y="858" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="400" text-anchor="start" fill="#AD3434">× 화면 안에 올바른 박스가 없음</text>
+<rect x="792" y="622" width="330" height="190" rx="0" fill="#F3F7FA" stroke="#172B3A" stroke-width="3"/>
+<text x="792" y="602" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#5A6872">가상 화면</text>
+<circle cx="955" cy="680" r="14" fill="#172B3A"/>
+<path d="M955,700 V753 M927,731 L955,709 L983,731 M955,753 L932,793 M955,753 L978,793" fill="none" stroke="#172B3A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="912" y="657" width="86" height="140" rx="0" fill="none" stroke="#17658A" stroke-width="3"/>
+<text x="1145" y="718" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#17658A">정상 위치</text>
+<text x="1145" y="754" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#17658A">박스 출력</text>
+<text x="792" y="858" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="400" text-anchor="start" fill="#17658A">✓ 객체 위치와 박스가 대응</text>
+<text x="76" y="902" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#5A6872">점선 박스: 잘못 해석된 출력</text>
+<text x="778" y="902" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#5A6872">실선 박스: 규약에 맞춘 출력</text>
+<rect x="60" y="980" width="280" height="80" rx="14" fill="white" stroke="#17658A" stroke-width="3"/>
+<text x="200" y="1029" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">채널·축 수정</text>
+<path d="M346,1020 H392" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="400" y="980" width="280" height="80" rx="14" fill="white" stroke="#17658A" stroke-width="3"/>
+<text x="540" y="1029" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">컴파일 성공</text>
+<path d="M686,1020 H732" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="740" y="980" width="280" height="80" rx="14" fill="white" stroke="#17658A" stroke-width="3"/>
+<text x="880" y="1029" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">좌표 단위 수정</text>
+<path d="M1026,1020 H1072" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="1080" y="980" width="280" height="80" rx="14" fill="white" stroke="#17658A" stroke-width="3"/>
+<text x="1220" y="1029" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">정상 박스 확인</text>
+<text x="720" y="1092" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="23" text-anchor="middle" fill="#5A6872">단계별 출력값 대조 · 마지막 동작은 SDK 시뮬레이션으로 확인</text>
+<rect x="80" y="1115" width="1280" height="94" rx="14" fill="#F3F7FA" stroke="#17658A" stroke-width="3"/>
+<text x="720" y="1156" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="29" font-weight="700" text-anchor="middle" fill="#17658A">완료 범위: SDK 시뮬레이션</text>
+<text x="720" y="1193" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#5A6872">해당 산출물의 직접 실물 보드 정량 시험·제품 적용과 구분</text>
+</svg>

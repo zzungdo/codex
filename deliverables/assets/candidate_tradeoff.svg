@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img" aria-labelledby="title desc">
+<title id="title">오인식 감소와 실제 객체 손실은 별도로 판단</title>
+<desc id="desc">같은 가상 장면의 기준 모델과 후보 모델을 비교합니다. 신규 차량 검출이 놓친 보행자를 해결하지 않습니다. 원리 설명용 가상 예시 · 실제 데이터 및 성과 수치 아님</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#5A6872"/></marker><marker id="redarrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#AD3434"/></marker></defs>
+<rect width="1440" height="1080" fill="white"/>
+<text x="44" y="59" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="38" font-weight="700" text-anchor="start" fill="#172B3A">오인식 감소와 실제 객체 손실은 별도로 판단</text>
+<text x="44" y="103" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#5A6872">원리 설명용 가상 예시 · 실제 데이터 및 성과 수치 아님</text>
+<rect x="44" y="150" width="650" height="635" rx="14" fill="white" stroke="#CBD3D9" stroke-width="3"/>
+<text x="74" y="205" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="32" font-weight="700" text-anchor="start" fill="#172B3A">기준 모델</text>
+<text x="74" y="247" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#5A6872">동일한 가상 장면</text>
+<rect x="70" y="287" width="598" height="304" rx="0" fill="#F3F7FA" stroke="#CBD3D9" stroke-width="3"/>
+<circle cx="168" cy="415" r="14" fill="#172B3A"/>
+<path d="M168,435 V488 M140,466 L168,444 L196,466 M168,488 L145,528 M168,488 L191,528" fill="none" stroke="#172B3A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M308,483 L316,448 L343,424 H393 L417,448 L433,458 V496 H308 Z" fill="#E3EBF0" stroke="#172B3A" stroke-width="3"/>
+<circle cx="332" cy="497" r="12" fill="#172B3A"/>
+<circle cx="409" cy="497" r="12" fill="#172B3A"/>
+<path d="M570,423 V526" fill="none" stroke="#172B3A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M570,398 L600,430 L570,462 L540,430 Z" fill="#E3EBF0" stroke="#172B3A" stroke-width="3"/>
+<path d="M89,550 H649" fill="none" stroke="#CBD3D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="168" y="644" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#172B3A">보행자 가</text>
+<text x="370" y="644" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#172B3A">차량 나</text>
+<text x="570" y="644" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#172B3A">배경 다</text>
+<rect x="746" y="150" width="650" height="635" rx="14" fill="white" stroke="#CBD3D9" stroke-width="3"/>
+<text x="776" y="205" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="32" font-weight="700" text-anchor="start" fill="#172B3A">후보 모델</text>
+<text x="776" y="247" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#5A6872">동일한 가상 장면</text>
+<rect x="772" y="287" width="598" height="304" rx="0" fill="#F3F7FA" stroke="#CBD3D9" stroke-width="3"/>
+<circle cx="870" cy="415" r="14" fill="#172B3A"/>
+<path d="M870,435 V488 M842,466 L870,444 L898,466 M870,488 L847,528 M870,488 L893,528" fill="none" stroke="#172B3A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1010,483 L1018,448 L1045,424 H1095 L1119,448 L1135,458 V496 H1010 Z" fill="#E3EBF0" stroke="#172B3A" stroke-width="3"/>
+<circle cx="1034" cy="497" r="12" fill="#172B3A"/>
+<circle cx="1111" cy="497" r="12" fill="#172B3A"/>
+<path d="M1272,423 V526" fill="none" stroke="#172B3A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1272,398 L1302,430 L1272,462 L1242,430 Z" fill="#E3EBF0" stroke="#172B3A" stroke-width="3"/>
+<path d="M791,550 H1351" fill="none" stroke="#CBD3D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="870" y="644" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#172B3A">보행자 가</text>
+<text x="1072" y="644" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#172B3A">차량 나</text>
+<text x="1272" y="644" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#172B3A">배경 다</text>
+<rect x="119" y="389" width="98" height="145" rx="0" fill="none" stroke="#17658A" stroke-width="3"/>
+<rect x="526" y="382" width="88" height="155" rx="0" fill="none" stroke="#AD3434" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="168" y="691" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#17658A">검출</text>
+<text x="370" y="691" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="26" font-weight="400" text-anchor="middle" fill="#5A6872">미검출</text>
+<text x="570" y="691" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#AD3434">오인식 발생</text>
+<text x="369" y="747" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="23" font-weight="400" text-anchor="middle" fill="#5A6872">실선: 실제 객체 / 점선: 배경 오인식</text>
+<path d="M858,343 L882,367 M882,343 L858,367" fill="none" stroke="#AD3434" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="989" y="406" width="166" height="112" rx="0" fill="none" stroke="#17658A" stroke-width="3"/>
+<text x="870" y="691" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#AD3434">미검출 · 위험 손실</text>
+<text x="1072" y="691" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">신규 검출</text>
+<text x="1272" y="691" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">오인식 제거</text>
+<text x="1071" y="747" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="24" font-weight="400" text-anchor="middle" fill="#AD3434">보행자 미검출은 그대로 남음</text>
+<rect x="74" y="828" width="1292" height="117" rx="14" fill="#F3F7FA" stroke="#17658A" stroke-width="3"/>
+<text x="720" y="876" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="32" font-weight="700" text-anchor="middle" fill="#172B3A">새 차량 검출 ≠ 기존 보행자 손실 해결</text>
+<text x="720" y="919" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="400" text-anchor="middle" fill="#5A6872">오인식 감소·객체 획득·위험 손실을 각각 기록</text>
+<rect x="74" y="995" width="38" height="30" rx="0" fill="none" stroke="#17658A" stroke-width="3"/>
+<text x="129" y="1020" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#172B3A">실제 객체 검출</text>
+<rect x="450" y="995" width="38" height="30" rx="0" fill="none" stroke="#AD3434" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="505" y="1020" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#172B3A">배경 오인식</text>
+<path d="M824,1000 L844,1020 M844,1000 L824,1020" fill="none" stroke="#AD3434" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="861" y="1020" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="23" font-weight="400" text-anchor="start" fill="#172B3A">객체 미검출</text>
+<text x="1365" y="1020" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="22" font-weight="400" text-anchor="end" fill="#5A6872">비교 원리만 표현</text>
+</svg>

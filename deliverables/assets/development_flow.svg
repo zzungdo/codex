@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1040" viewBox="0 0 1440 1040" role="img" aria-labelledby="title desc">
+<title id="title">전체 개발 흐름과 모델별 평가 범위</title>
+<desc id="desc">ONNX 평가, SDK 시뮬레이션, 저장된 보드 결과 평가와 별도 측방 모델의 직접 실물 보드 시험을 구분합니다. 수행 업무를 일반화한 개념도 · 모델별 검증 범위는 본문 참조</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#5A6872"/></marker><marker id="redarrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L8,4 L0,8 Z" fill="#AD3434"/></marker></defs>
+<rect width="1440" height="1040" fill="white"/>
+<text x="44" y="59" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="38" font-weight="700" text-anchor="start" fill="#172B3A">전체 개발 흐름과 모델별 평가 범위</text>
+<text x="44" y="103" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="24" font-weight="400" text-anchor="start" fill="#5A6872">수행 업무를 일반화한 개념도 · 모델별 검증 범위는 본문 참조</text>
+<rect x="50" y="166" width="300" height="100" rx="14" fill="white" stroke="#17658A" stroke-width="3"/>
+<text x="200.0" y="224.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">데이터·전처리</text>
+<rect x="390" y="166" width="300" height="100" rx="14" fill="white" stroke="#17658A" stroke-width="3"/>
+<text x="540.0" y="224.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">학습·조건 비교</text>
+<rect x="730" y="166" width="300" height="100" rx="14" fill="white" stroke="#17658A" stroke-width="3"/>
+<text x="880.0" y="224.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">ONNX export</text>
+<rect x="1070" y="166" width="300" height="100" rx="14" fill="white" stroke="#17658A" stroke-width="3"/>
+<text x="1220.0" y="224.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">SDK 변환·컴파일</text>
+<path d="M350,216 H386" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M690,216 H726" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1030,216 H1066" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M880,266 V312 H200 V428" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1220,266 V350 H540 V428" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1320,266 V390 H1220 V428" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 7" marker-end="url(#arrow)"/>
+<rect x="50" y="430" width="300" height="120" rx="14" fill="white" stroke="#17658A" stroke-width="3"/>
+<text x="200.0" y="480.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">ONNX 평가</text>
+<text x="200.0" y="516.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">PC 추론 결과</text>
+<rect x="390" y="430" width="300" height="120" rx="14" fill="white" stroke="#17658A" stroke-width="3"/>
+<text x="540.0" y="480.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">SDK 시뮬레이션</text>
+<text x="540.0" y="516.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">변환 산출물</text>
+<rect x="730" y="430" width="300" height="120" rx="14" fill="white" stroke="#5A6872" stroke-width="3"/>
+<text x="880.0" y="480.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#5A6872">저장된 보드 결과</text>
+<text x="880.0" y="516.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#5A6872">기존 덤프 평가</text>
+<rect x="1070" y="430" width="300" height="120" rx="14" fill="white" stroke="#17658A" stroke-width="3" stroke-dasharray="10 7"/>
+<text x="1220.0" y="462.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">직접 실물 보드</text>
+<text x="1220.0" y="498.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">재현성 시험</text>
+<path d="M200,550 V616 H720" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M540,550 V616 H720" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M880,550 V616 H720" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1220,550 V616 H720" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M720,616 V662" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="400" y="664" width="640" height="100" rx="14" fill="white" stroke="#17658A" stroke-width="3"/>
+<text x="720.0" y="722.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">조건을 맞춘 평가·오류 분석</text>
+<path d="M720,764 V814" fill="none" stroke="#5A6872" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="400" y="816" width="640" height="90" rx="14" fill="#F3F7FA" stroke="#17658A" stroke-width="3"/>
+<text x="720.0" y="869.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17658A">후보 선정·릴리스 판단 자료</text>
+<text x="720" y="953" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="25" font-weight="400" text-anchor="middle" fill="#5A6872">모든 모델의 직접 보드 시험·제품 출하 완료를 뜻하지 않음</text>
+<path d="M50,1000 H105" fill="none" stroke="#17658A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="119" y="1008" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#172B3A">일반 흐름</text>
+<path d="M320,1000 H375" fill="none" stroke="#17658A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 7"/>
+<text x="389" y="1008" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#172B3A">별도 측방 모델 시험</text>
+<rect x="790" y="984" width="34" height="28" rx="3" fill="white" stroke="#5A6872" stroke-width="3"/>
+<text x="838" y="1008" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="22" font-weight="400" text-anchor="start" fill="#172B3A">저장된 결과를 평가하는 경로</text>
+<text x="1220" y="534.75" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#17658A">별도 측방 모델</text>
+</svg>
