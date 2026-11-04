@@ -1,0 +1,42 @@
+# 프로젝트 의존성·아키텍처 제약 (SSOT)
+# scripts/validate_arch.py 가 pre-push 시 이 파일을 읽어 위반 검사를 실행한다.
+# banned 목록은 validate_arch.py 가 자동으로 grep 검사한다.
+
+# 금지된 의존성 목록
+banned: []
+# 예시:
+# banned:
+#   - name: pickle
+#     reason: 보안 취약점 — torch.save/torch.load 사용
+
+# 허용된 의존성 화이트리스트 (선택사항)
+allowed: []
+
+# 아키텍처 규칙 (자유 형식 메모)
+arch_rules:
+  - "DAIR 트레이너·밸리데이터는 BaseTrainer/BaseValidator 복붙 재구현 금지 — super() 위임만 허용 (D-002)"
+  - "Novatek NPU 변환은 wrapper 스크립트(`novatek/convert/`)만 사용 — 인라인 명령 금지"
+  - "ultralytics export ONNX → onnx2novaonnx_converter.py → run_compiler.sh 순서 준수. raw export ONNX rename 금지"
+  - "QAT 단계에서 AMP 항상 비활성화 (observers fp16 미지원)"
+  - "듀얼 GPU 환경 workers ≤ 4 (RAM 125GB 제한)"
+
+# 임시 파일 네이밍 규칙
+# .claude/hooks/cleanup_suggest.py (Stop 훅) 가 세션 종료 시 이 패턴으로 스캔한다.
+# .githooks/pre-commit 도 이 패턴으로 임시 파일 커밋을 차단한다.
+temp_patterns:
+  # 파일명 접두사
+  prefixes:
+    - "tmp_"
+    - "scratch_"
+    - "debug_"
+    - "exp_"
+  # 파일명 줄기 접미사 — 확장자 제외
+  suffixes:
+    - "_tmp"
+    - "_scratch"
+    - "_debug"
+  # 임시 디렉토리 — 하위 파일 전체 감지
+  dirs:
+    - "tmp/"
+    - "scratch/"
+    - ".experiments/"

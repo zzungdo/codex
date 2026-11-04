@@ -1,0 +1,47 @@
+# 프로젝트 용어 규범 (SSOT)
+# 팀 내 용어 혼용 방지용. docs/decisions.md 와 함께 유지.
+
+terms:
+  - term: "DAIR"
+    definition: "Data Augmentation Invariance Regularization — 동일 이미지의 서로 다른 augmentation 결과 간 feature 일관성을 강제하는 정규화 기법"
+    aliases: ["dair"]
+  - term: "Symmetric DFL"
+    definition: "음수 distance를 허용하는 DFL 변형. 부분 가시 객체(잘린 박스) 대응. offset=reg_max//4 필수"
+    aliases: ["SymmetriceDFL", "symmetric_dfl"]
+  - term: "DynamicCrop"
+    definition: "비율 기반 가변 crop 데이터셋. 4K → 학습 해상도 자동 스케일. `dataset_name: dycrop`"
+    aliases: ["dycrop", "DynamicCropYOLODataset"]
+  - term: "DMS Pose"
+    definition: "Driver Monitoring System — 70-keypoint 얼굴 포즈 + 다중 클래스 detection. P5-only keypoints, scale-split TAL"
+    aliases: ["dms", "dms_pose", "DMSPose"]
+  - term: "QAT"
+    definition: "Quantization-Aware Training — Novatek CNN25 NPU 타겟. 2단계: warmup(observers) → fake-quant. **2026-05-13 미사용 결정 (D-010)** — 코드/config 보존, 일정·이점 불명확 사유"
+    aliases: ["qat", "fx_qat"]
+    status: deprecated
+  - term: "Novatek NPU"
+    definition: "Novatek CNN25 NPU 엣지 dashcam 추론 칩. INT8 activation + 12-bit per-channel weight (`novatek_8a12w`/`novatek_pct_8a12w`)"
+    aliases: ["NPU", "CNN25"]
+  - term: "GA Tuner"
+    definition: "유전 알고리즘 기반 하이퍼파라미터 탐색기 (`tools/ga_tuner.py`). LHS 초기화 + SBX crossover + polynomial mutation + elitism"
+    aliases: ["ga_tuner", "GA"]
+  - term: "Front / Rear"
+    definition: "대시캠 카메라 위치. Front=4K, Rear=QHD. `runs/detect/rear`=Rear baseline, `runs/detect/front`=Front baseline"
+    aliases: ["front", "rear"]
+  - term: "CMD"
+    definition: "ncnvox 명령어 다중분류 (7 commands + background, 8-class). 입력 96×96 mel-spectrogram, output softmax. TF 원본 CRNN ~554K params. D-014 사이클로 ultralytics 흡수"
+    aliases: ["cmd", "ncnvox_cmd"]
+  - term: "cmd-femto"
+    definition: "CMD 의 Conv-only 변형 (~207K params, `yolov8-cmd-femto.yaml`). KWS `yolov8-kws-femto` 답습. D-016 production 채택 — NPU 288 KB / 0.24 ms / cosine=1.0"
+    aliases: ["cmd_femto"]
+  - term: "cmd-crnn"
+    definition: "CMD 의 CRNN PyTorch port (~554K params, Conv + nn.LSTM(128) + Dense, `yolov8-cmd-crnn.yaml`). standalone wrap (parse_model 우회). NPU 호환 확정 후 보관 (D-016) — size/latency 모두 femto 열위"
+    aliases: ["cmd_crnn", "CRNNClassificationModel"]
+  - term: "AudioClassificationDataset"
+    definition: "ncnvox 공통 wav→mel→tensor 변환 base (Phase B1, `projects/src/ncnvox/audio_classification_dataset.py`). KWS/CMD subclass 의 SSOT — augment 정책·load_wav_16k·split_wav_dir·find_*_dir 등 모듈 함수 보유"
+    aliases: ["AudioClassificationDataset"]
+  - term: "OnTheFlyClassifyTrainer"
+    definition: "wakeword_onthefly + cmd_onthefly trainer 공통 base (D-015, `projects/src/ncnvox/_base_trainer.py`). yaml 파싱·캐싱·DDP·build_dataset/get_dataloader 통합. subclass 는 `_loader_builder = staticmethod(...)` 만 지정"
+    aliases: ["OnTheFlyClassifyTrainer"]
+  - term: "RewriteLSTMONNX8"
+    definition: "Novatek CNN25 컴파일러의 LSTM → CNN-SCALEUP unroll 변환 op. timesteps × LSTM cell op 만큼 NPU layer 확장. cmd-crnn 의 경우 24 × 12 ≈ 290 layer. D-016 에서 cosine=1.0 NPU 호환 확정"
+    aliases: ["LSTM unroll", "RewriteLSTMONNX"]
